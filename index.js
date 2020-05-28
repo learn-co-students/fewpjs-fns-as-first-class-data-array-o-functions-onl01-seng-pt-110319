@@ -43,12 +43,6 @@ var routine = []
 	routine.push(unleashDog);
 
 function exerciseDog(dogName, dogBreed) {
-	let array = []
-	for(let i=0; i<routine.length; i++) {
-	//console.log(typeof routine[i]);
-	console.log(routine[i]);
-	array.push(routine[i]);
-	return array;
-	}
+	return routine.map(functions => functions(dogName, dogBreed));
 }
 
