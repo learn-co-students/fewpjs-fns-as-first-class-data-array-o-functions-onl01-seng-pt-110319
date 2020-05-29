@@ -45,8 +45,7 @@ let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog
 function exerciseDog(dogName, dogBreed) {
   let ret = []
   
-  var f
-  for (f of routine) {
+  for (var f of routine) {
     ret.push(f(dogName, dogBreed))
   }
   
