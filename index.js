@@ -19,12 +19,29 @@ function throwFrisbee(dogName, dogBreed){
   return result
 }
 function walkHome(dogName, dogBreed){
-  let result = `Wake ${dogName} the ${dogBreed}`
+  let result = `Walk home with ${dogName} the ${dogBreed}`
   console.log(result)
   return result
 }
 function unleashDog(dogName, dogBreed){
-  let result = `Wake ${dogName} the ${dogBreed}`
+  let result = `Unleash ${dogName} the ${dogBreed}`
   console.log(result)
   return result
 }
+var routine = [
+  wakeDog,
+  leashDog,
+  walkToPark,
+  throwFrisbee,
+  walkHome,
+  unleashDog
+  ]
+  
+  function exerciseDog(dogName, dobBreed){
+    for(i = 0; i < routine.length - 1; i++){
+      self(dogName, dogBreed)[i]
+    }
+    
+  }
+    
+  
