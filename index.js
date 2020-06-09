@@ -37,10 +37,8 @@ var routine = [
   unleashDog
   ]
   
-  function exerciseDog(dogName, dobBreed){
-    for(i = 0; i < routine.length - 1; i++){
-      self(dogName, dogBreed)[i]
-    }
+  function exerciseDog(dogName, dogBreed){
+    return routine.map(b => b(dogName, dogBreed)) //not sure syntax remember to goggle
     
   }
     
